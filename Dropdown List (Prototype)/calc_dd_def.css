@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+body, td {
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:11px;
+}
+h1 {
+    font-size:20px;
+}
+.column {
+    display: table-cell;
+    margin: 0px;
+    padding: 0px 20px 0px 0px;
+}
+
+select {
+    min-width:100px;
+}
+.output {
+    background-color:#000000;
+    text-align:center;
+}
+.tbl_heading {
+    font-weight:bold;
+    background-color:#6e6aa7;
+    color:#ffffff;
+}
+.dmg_immune {
+    background-color:#aaaaaa;
+    width:50px;
+}
+.dmg_resist2 {
+    background-color:#b5b5ee;
+    width:50px;
+}
+.dmg_resist {
+    background-color:#b8ff98;
+    width:50px;
+}
+.dmg_normal {
+    background-color:#ffffff;
+    width:50px;
+}
+.dmg_weak {
+    background-color:#ffb872;
+    width:50px;
+}
+.dmg_weak2 {
+    background-color:#ee6e6c;
+    width:50px;
+}

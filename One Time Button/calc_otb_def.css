@@ -1,0 +1,210 @@
+@charset "utf-8";
+@import "compass";
+
+body {
+	width: 50%;
+	margin: 5% auto 5% auto;
+	padding: 0;
+	font-family: 'Roboto Condensed';
+
+    background: #333;
+}
+
+#results > div > div {
+	display: inline;
+}
+
+#ui-container {
+	width:100%;
+}
+
+#results {
+	width: 100%;
+	position: relative;
+}
+
+#results > div {
+		position: relative;
+		word-wrap: normal;
+		padding: 10px;
+		min-height: 20px;
+		background-color: #666;
+}
+
+#results > div:nth-of-type(odd) {
+    background-color: #888;
+}
+
+#ui-container {
+	padding: 10px 0;
+}
+#ui-container > button {
+	width: 14.2857142857%;
+	height: 69px;
+}
+
+#results > div#currentType {
+	background-color: #ccc;
+}
+
+#results > div#currentType > div {
+    background-color: transparent;
+    color: #222;
+    text-shadow: 1px 1px 0 #999;
+}
+
+button, .tag {
+	font-size: 17px;
+	font-family: 'Roboto Condensed';
+	text-align: center;
+	border: .3em solid transparent;
+	border-radius: 0.69em;
+	text-transform: uppercase;
+	color: white;
+	overflow: hidden;
+	text-shadow: 0em 0em 0.5em black;
+}
+
+.Normal {
+    background-color: #a8a878;
+    border-top-color: lighten(#a8a878, 15%);
+    border-bottom-color: darken(#a8a878, 15%);
+}
+.Fire {
+    background-color: orange;
+    border-top-color: lighten(orange, 15%);
+    border-bottom-color: darken(orange, 15%);
+}
+.Fighting {
+    background-color: #c03028;
+    border-top-color: lighten(#c03028, 15%);
+    border-bottom-color: darken(#c03028, 15%);
+}
+.Water {
+    background-color: #6890f0;
+    border-top-color: lighten(#6890f0, 15%);
+    border-bottom-color: darken(#6890f0, 15%);
+}
+.Poison {
+    background-color: #a040a0;
+    border-top-color: lighten(#a040a0, 15%);
+    border-bottom-color: darken(#a040a0, 15%);
+}
+.Electric {
+    background-color: #f8d030;
+    border-top-color: lighten(#f8d030, 15%);
+    border-bottom-color: darken(#f8d030, 15%);
+}
+.Ground {
+    background-color: #e0c068;
+    border-top-color: lighten(#e0c068, 15%);
+    border-bottom-color: darken(#e0c068, 15%);
+}
+.Grass {
+    background-color: #78c850;
+    border-top-color: lighten(#78c850, 15%);
+    border-bottom-color: darken(#78c850, 15%);
+}
+.Flying {
+    background-color: #a890f0;
+    border-top-color: lighten(#a890f0, 15%);
+    border-bottom-color: darken(#a890f0, 15%);
+}
+.Ice {
+    background-color: #98d8d8;
+    border-top-color: lighten(#98d8d8, 15%);
+    border-bottom-color: darken(#98d8d8, 15%);
+}
+.Bug {
+    background-color: #a8b820;
+    border-top-color: lighten(#a8b820, 15%);
+    border-bottom-color: darken(#a8b820, 15%);
+}
+.Psychic {
+    background-color: #f85888;
+    border-top-color: lighten(#f85888, 15%);
+    border-bottom-color: darken(#f85888, 15%);
+}
+.Rock {
+    background-color: #b8a038;
+    border-top-color: lighten(#b8a038, 15%);
+    border-bottom-color: darken(#b8a038, 15%);
+}
+.Dragon {
+    background-color: #7038f8;
+    border-top-color: lighten(#7038f8, 15%);
+    border-bottom-color: darken(#7038f8, 15%);
+}
+.Ghost {
+    background-color: #705898;
+    border-top-color: lighten(#705898, 15%);
+    border-bottom-color: darken(#705898, 15%);
+}
+.Dark {
+    background-color: #705848;
+    border-top-color: lighten(#705848, 15%);
+    border-bottom-color: darken(#705848, 15%);
+}
+.Steel {
+    background-color: #b8b8d0;
+    border-top-color: lighten(#b8b8d0, 15%);
+    border-bottom-color: darken(#b8b8d0, 15%);
+}
+.Fairy {
+    background-color: #ffb7fa;
+    border-top-color: lighten(#ffb7fa, 15%);
+    border-bottom-color: darken(#ffb7fa, 15%);
+}
+.Cosmic {
+    background-color: #482b86;
+    border-top-color: lighten(#7253b6, 15%);
+    border-bottom-color: darken(#7253b6, 15%);
+}
+.Virtual {
+    background-color: #c55ed2;
+    border-top-color: lighten(#ce9ceb, 15%);
+    border-bottom-color: darken(#ce9ceb, 15%);
+}
+.Void {
+    background-color: #68a090;
+    border-top-color: lighten(#97ccbd, 15%);
+    border-bottom-color: darken(#97ccbd, 15%);
+}
+
+.tag {
+	border: 0 !important;
+	padding: 5px 8px;
+    margin: 5px;
+	z-index: 2;
+}
+
+#results > div:before {
+	position: absolute;
+	top: 25%;
+	left: -11%;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 14px;
+}
+
+#currentType:before {
+	content:'Currently';
+}
+
+#superWeak:before {
+	content:'4x from';
+}
+
+#weak:before {
+	content:'2x from';
+}
+
+#resistant:before {
+	content:'½x from';
+}
+#superResistant:before {
+	content:'¼ from';
+}
+#immune:before {
+	content:'0x from';
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--
+			File Name: calc_dd_def.html
+			Author: Kaizen Hayashi
+		-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.9, maximum-scale=4">
+		<title>Pokémon Emergence Type Calculator</title>
+		
+		<link rel="stylesheet" href="calc_dd_def.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script defer type="text/javascript" src="calc_dd_def.js"></script>
+	</head>
+	
+	<body>
+		<h1>Pokémon Emergence Type Calculator</h1>
+		<p>Modified for the Cambiome Region. Made from the code by <a href="https://ikewise.neocities.org/typecalc.htm">Ikewise</a>.</p>
+		<br>
+	
+		<div class="column">
+			Type 1: <select id="def_type1">
+			<option value="0">Normal</option>
+			<option value="1">Fighting</option>
+			<option value="2">Flying</option>
+			<option value="3">Poison</option>
+			<option value="4">Ground</option>
+			<option value="5">Rock</option>
+			<option value="6">Bug</option>
+			<option value="7">Ghost</option>
+			<option value="8">Steel</option>
+			<option value="9">Fire</option>
+			<option value="10">Water</option>
+			<option value="11">Grass</option>
+			<option value="12">Electric</option>
+			<option value="13">Psychic</option>
+			<option value="14">Ice</option>
+			<option value="15">Dragon</option>
+			<option value="16">Dark</option>
+			<option value="17">Fairy</option>
+			<option value="18">Cosmic</option>
+			<option value="19">Virtual</option>
+			<option value="20">Void</option>
+			</select>
+		<br>
+			Type 2: <select id="def_type2">
+			<option value="21">None</option>
+			<option value="0">Normal</option>
+			<option value="1">Fighting</option>
+			<option value="2">Flying</option>
+			<option value="3">Poison</option>
+			<option value="4">Ground</option>
+			<option value="5">Rock</option>
+			<option value="6">Bug</option>
+			<option value="7">Ghost</option>
+			<option value="8">Steel</option>
+			<option value="9">Fire</option>
+			<option value="10">Water</option>
+			<option value="11">Grass</option>
+			<option value="12">Electric</option>
+			<option value="13">Psychic</option>
+			<option value="14">Ice</option>
+			<option value="15">Dragon</option>
+			<option value="16">Dark</option>
+			<option value="17">Fairy</option>
+			<option value="18">Cosmic</option>
+			<option value="19">Virtual</option>
+			</select><br><br>
+		</div>
+		<br>
+		<div class="column colum2">
+			Ability: <select id="def_ability">
+			<option value="0">None</option>
+			<option value="1">Thick Fat</option>
+			<option value="2">Heatproof</option>
+			<option value="3">Levitate</option>
+			<option value="4">Volt Absorb</option>
+			<option value="5">Water Absorb</option>
+			<option value="6">Dry Skin</option>
+			<option value="7">Flash Fire</option>
+			<option value="8">Sap Sipper</option>
+			<option value="9">Filter</option>
+			<option value="10">Wonder Guard</option>
+			</select>
+		</div>
+		<br>
+		<div class="column colum2">
+			Weather: <select id="def_weather">
+			<option value="0">None</option>
+			<option value="1">Drought</option>
+			<option value="2">Drizzle</option>
+			</select>
+		</div>
+		<br>	
+	
+		<input type="submit" id="submit" value="Submit"><br><br>
+	
+		<div id="content"></div><br><br>
+	</body>
+</html>
